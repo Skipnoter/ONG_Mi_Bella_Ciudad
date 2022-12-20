@@ -60,7 +60,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'MiBellaCiudad.wsgi.application'
 
-#hola como estas???? provbando commit
+#hola como estas???? provbando commit con lucas profe 20-12-22 a las 19.15hs
 
 
 # Password validation
