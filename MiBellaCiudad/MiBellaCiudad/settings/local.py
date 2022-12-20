@@ -1,9 +1,14 @@
 from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 
+import os
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
@@ -23,4 +28,9 @@ DATABASES = {
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [os.path.join('static')]
+
+
+
 

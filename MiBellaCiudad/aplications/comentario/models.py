@@ -3,19 +3,18 @@ from datetime import datetime, date
 from django.db import models
 
 # Create your models here.
-from aplications.usuario.models import Usuario
+#from aplications.usuario.models import Usuario
+from aplications.noticia.models import Noticia
 
 # Create your models here.
 
 class Comentarios(models.Model):
 
-   # id_usuario = models.ForeignKey(Usuarios , on_delete=models.CASCADE)
-    #fecha_comentario = 
-    #hora_comentario =
-    comentarios = models.CharField('Comentario', max_length=2000)
-    #noticia =
+    fecha_hora_registro = models.DateTimeField(auto_now_add=True)
+    comentarios = models.CharField('Comentario', max_length=2000, blank=True)
+    noticia = models.ForeignKey(Noticia, related_name= 'noticias', on_delete=models.SET_NULL, null=True )
 
-    #cant_likes =
+    me_gusta = models.BooleanField(default=False)
 
     def __str__(self) :
-        return str(self.id) + '-' +  self.comentarios
+        return  str(self.comentarios)
