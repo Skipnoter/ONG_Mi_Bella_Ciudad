@@ -5,6 +5,7 @@ from .import views
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('usuario/', views.CargarNoticia.as_view())
+    path('usuario/', views.CargarNoticia.as_view()),
     
-]
+    path('login/', views.Login.as_view()),
+]       
