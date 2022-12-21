@@ -7,20 +7,15 @@
 </head>
 
 <body>
+    <h1> Noticias </h1>
 
 
-    <header>
-        <h1> Noticias </h1>
-    </header>
-
-    <section>
-        <p>hola a todos</p>
-    </section>
-
-    <footer>
-        
-    </footer>
-
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">
+            Cargar Noticia!
+        </button>
+    </form>
 
 </body>
 

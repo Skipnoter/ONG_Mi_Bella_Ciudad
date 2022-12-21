@@ -8,7 +8,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
+LOGIN_REDIRECT_URL = "/noticia"
+LOGIN_URL = "/login/"
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
@@ -18,7 +19,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db_mbc',
         'USER': 'postgres',
-        'PASSWORD':'123456',
+        'PASSWORD':'mdadmin22',
         'HOST':'localhost',
         'PORT':'5432',
     }

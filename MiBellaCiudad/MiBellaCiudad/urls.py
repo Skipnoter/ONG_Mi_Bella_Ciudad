@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
+from aplications.noticia.views import PaginaInicio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
-    path('', include('aplications.usuario.urls'))
+    path('', PaginaInicio.as_view(), name='inicio'),
+    path('', include('aplications.usuario.urls')),
+    path('', include('aplications.noticia.urls'))
 
 ]

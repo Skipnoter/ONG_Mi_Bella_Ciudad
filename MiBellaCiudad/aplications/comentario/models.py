@@ -1,5 +1,4 @@
 from time import timezone
-from datetime import datetime, date
 from django.db import models
 
 # Create your models here.
