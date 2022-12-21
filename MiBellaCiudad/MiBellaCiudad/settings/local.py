@@ -8,7 +8,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-LOGIN_REDIRECT_URL = "/noticia"
+LOGIN_REDIRECT_URL = "/noti"
 LOGIN_URL = "/login/"
 
 # Database

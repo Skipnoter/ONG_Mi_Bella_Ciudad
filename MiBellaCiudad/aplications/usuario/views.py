@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView
-from django.urls import reverse_lazy
+from django.urls import reverse
 from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
 from .models import Usuario
@@ -34,9 +34,7 @@ class UsuarioCreateView(CreateView):
 
     def get_success_url(self):
         print(self)
-        return reverse_lazy('exito')
+        return reverse('exito')
 
 
-    def post(self, request, *args, **kwargs):
-        self.object = None
-        return super().post(request, *args, **kwargs)
+   
