@@ -10,7 +10,7 @@ urlpatterns = [
     #path('login/', views.Login.as_view()),
     path('noticia/', views.ListarNoticias.as_view()),
     path('noti/', views.NoticiasCreateView.as_view(), name='noticias'),
-
+    
 
     
 ]       
