@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from django.urls import reverse
 from django.views.generic.edit import CreateView
+from django.views.generic.edit import DeleteView
 from django.views.generic import TemplateView
 from .models import Usuario
 from .forms import FormularioUsuario
@@ -35,6 +36,7 @@ class UsuarioCreateView(CreateView):
     def get_success_url(self):
         print(self)
         return reverse('exito')
+
 
 
    

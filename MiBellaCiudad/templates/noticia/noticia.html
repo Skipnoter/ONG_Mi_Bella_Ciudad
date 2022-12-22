@@ -9,13 +9,14 @@
 <body>
     <h1> Noticias </h1>
 
-
+    <button><a href="{% url 'categoria' %}">Crear Categoria</a></button>
     <form method="post">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit">
             Cargar Noticia!
         </button>
     </form>
+    <button><a href="{% url 'vernoticias' %}">Volver</a></button>
 
 </body>
 

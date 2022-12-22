@@ -22,6 +22,7 @@ urlpatterns = [
     path('', PaginaInicio.as_view(), name='inicio'),
     path('', include('aplications.usuario.urls')),
     path('', include('aplications.noticia.urls')),
+    path('', include('aplications.categorias.urls')),
     
 
 ]

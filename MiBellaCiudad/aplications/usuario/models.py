@@ -11,7 +11,7 @@ class Usuario(AbstractUser):
     tipo = models.BooleanField(default=False)
     
     celular =  models.CharField( validators=[phone_regex], max_length=60,null=True, blank=True )
-    fecha_de_nacimiento = models.DateField()
+    fecha_de_nacimiento = models.DateField(null=True)
         
 
     def __str__(self):
